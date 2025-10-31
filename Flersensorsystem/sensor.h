@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 
 class Sensor{ 
@@ -13,11 +14,11 @@ class Sensor{
         double MaxVal;
 
     public:
+    //
+    Sensor(std::string S1, std::string cU, double min, double max);
 
-        Sensor(std::string S1, std::string cU, double min, double max);
-
+    //Slumpvärde inom ett intervall
     double read();
-
 
 };
 

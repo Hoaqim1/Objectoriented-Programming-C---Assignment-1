@@ -15,3 +15,14 @@
         double slump = (double)rand() / RAND_MAX;
         return MinVal + slump * range;
 }
+
+void SensorTest() {
+    Sensor temp("Tempsensor_1", -10, 40);
+    Sensor humid("HumiditySensor_1", 0, 40)
+
+    double temp = temp.read();
+    double humid =humid.read();
+
+    std::cout << temp
+    std::cout << humid
+}

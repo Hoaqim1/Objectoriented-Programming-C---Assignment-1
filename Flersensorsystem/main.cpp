@@ -3,12 +3,11 @@
 #include "storage.h"
 #include "measurement.h"
 #include <ctime>
+#include "menu.cpp"
 
 int main(){
 
     srand(time(nullptr));
-
-    SensorTest();
 
     return 0;
 }

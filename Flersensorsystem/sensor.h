@@ -23,5 +23,6 @@ class Sensor{
 
 };
 
+void SensorTest();
 
 #endif

@@ -1,6 +1,13 @@
 #include <iostream>
+#include "storage.h"
+#include "sensor.h"
 
 void Menu() {
+    MeasurementStorage storage;
+    Sensor temp("TempSensor_1", "C", -10, 40);
+    Sensor humid("HumiditySensor_1", "%", 0, 100);
+    
+    
 
     int choice;
 
@@ -23,16 +30,23 @@ void Menu() {
 
         switch(choice){
             case 1:
+                break;
             case 2:
+                break;
             case 3:
+                break;
             case 4:
+                break;
             case 5:
+                break;
             case 6:
+                std::cout << "Programmet avslutas" << '\n';
+                break;
             default:
             std::cout << "Ogiltig inmatning, välj mellan 1-6!" << '\n';
             break;
         }
 
-    } while(choice != 10);
+    } while(choice != 6);
 
 }

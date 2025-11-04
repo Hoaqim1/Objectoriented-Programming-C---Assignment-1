@@ -16,10 +16,4 @@
         return MinVal + slump * range;
 }
 
-    std::string TimeStamp() {
-        std::string ts = ctime(nullptr);
-        ts.pop_back();
-        return ts;
-    
-}
 

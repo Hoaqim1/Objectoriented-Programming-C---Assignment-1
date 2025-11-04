@@ -5,7 +5,7 @@
 #include <string>
 #include <cstdlib>
 
-//En sensor med namn, enhet, minst värde och max värde
+//En sensor med namn, enhet, minst värde och max värde, 
 
 class Sensor{ 
     private:

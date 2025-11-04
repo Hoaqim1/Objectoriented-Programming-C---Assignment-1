@@ -9,17 +9,17 @@
 
 class Sensor{ 
     private:
-        std::string TempSensor_1;
+        std::string Sens;
         std::string cUnit;
         double MinVal;
         double MaxVal;
 
     public:
     //Konstruktorn
-    Sensor(std::string S1, std::string cU, double min, double max);
+    Sensor(std::string, std::string, double, double);
 
     //Lägg möjligtvis logik här istället, tillfällig ide atm
-    //Slumpvärde inom ett intervall
+    //Slumpvärde inom ett intervall, logik i sensor.cpp
     double read();
 
 };

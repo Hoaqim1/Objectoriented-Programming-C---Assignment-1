@@ -22,7 +22,7 @@ class MeasurementStorage {
         void printAll() const { 
         std::cout << "Mätningar" << '\n';
         for (const auto&m : data) {
-            std::cout << m.TStamp << ", " << m.Sensor_1 << ", " << m.val << ", " << m.cUnit_1 << "\n";
+            std::cout << m.TStamp << ", " << m.Sens << ", " << m.val << ", " << m.cUnit << "\n";
 
         }
     }
@@ -34,7 +34,7 @@ class MeasurementStorage {
             double maxVal = -100;
 
         for (const auto& m : data) {
-            if (m.Sensor_1 == sensorName) {
+            if (m.Sens == sensorName) {
                 sum += m.val;
                 if (m.val < minVal) minVal = m.val;
                 if (m.val > maxVal) maxVal = m.val;
@@ -51,7 +51,7 @@ class MeasurementStorage {
 
         double StdDev = 0;
         for (const auto& m : data) {
-            if (m.Sensor_1 == sensorName) {
+            if (m.Sens == sensorName) {
                 StdDev += (m.val - mean) * (m.val - mean);
             }
         }

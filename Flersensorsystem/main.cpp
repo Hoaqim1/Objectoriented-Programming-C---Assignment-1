@@ -3,7 +3,6 @@
 #include "storage.h"
 #include "measurement.h"
 #include <ctime>
-#include "menu.cpp"
 
 int main(){
 

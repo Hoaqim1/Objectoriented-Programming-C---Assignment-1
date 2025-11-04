@@ -7,8 +7,8 @@ class Sensor;
 
 
 struct Measurement { 
-    std::string Sensor_1;
-    std::string cUnit_1;
+    std::string Sens;
+    std::string cUnit;
     double val;
     std::string TStamp;
 

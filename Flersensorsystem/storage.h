@@ -14,7 +14,7 @@ class MeasurementStorage {
         std::vector<Measurement> data;
 
     public:
-    //här läggs nya värden i vectorn
+    //Funktioner med logik som ska användas för att hantera och sedan visa data
         void addMeasurement(const Measurement& m)  {
             data.push_back(m);
             }

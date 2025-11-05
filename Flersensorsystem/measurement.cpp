@@ -30,3 +30,5 @@ void getMeasurement(MeasurementStorage& storage, Sensor& temp, Sensor& humid) {
     std::cout << "Value added: " << m2.Sens << m2.val << " " << m2.cUnit << '\n';
 }
 
+
+

@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 #include "storage.h"
 
 
@@ -10,6 +11,11 @@
         }
 
     void MeasurementStorage::printAll() const { 
+        if (data.empty()) {
+            std::cout << "Inga mätvärden i listan!" << '\n';
+            return;
+        }
+        std::cout << std::setprecision(2);
         std::cout << "Mätningar" << '\n';
         for (const auto&m : data) {
             std::cout << m.TStamp << ", " << m.Sens << ", " << m.val << ", " << m.cUnit << "\n";
@@ -48,6 +54,7 @@
     }
     StdDev = std::sqrt(StdDev / val);
 
+    std::cout << std::setprecision(2);
     std::cout << "Statistik för " << sensorName << "\n";
     std::cout << "Antal värden: " << val << '\n';
     std::cout << "Medelvärdet är: " << mean << '\n';
@@ -66,7 +73,7 @@
             file << m.TStamp << "," << m.Sens << "," << m.val << "," << m.cUnit << "\n";
         }
         file.close();
-        std::cout << "Värden sparade";
+        std::cout << "Värden sparade" << '\n';
 }
 
     void MeasurementStorage::LoadFile(const std::string&Datafile) {

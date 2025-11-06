@@ -3,6 +3,7 @@
 #include "storage.h"
 #include <ctime>
 #include <iostream>
+#include <iomanip>
 
 void getMeasurement(MeasurementStorage& storage, Sensor& temp, Sensor& humid) {
 
@@ -26,8 +27,10 @@ void getMeasurement(MeasurementStorage& storage, Sensor& temp, Sensor& humid) {
     m2.TStamp = ts;
     storage.addMeasurement(m2);
 
-    std::cout << "Värdet har lagts till i listan: " << m1.Sens << m1.val << " " << m1.cUnit << '\n';
-    std::cout << "Värdet har lagts till i listan: " << m2.Sens << m2.val << " " << m2.cUnit << '\n';
+    std::cout << std::fixed << std::setprecision(2);
+    std::cout << "Värdet har lagts till i listan för " << m1.Sens << ", " << m1.val << " " << m1.cUnit << '\n';
+    std::cout << "Värdet har lagts till i listan för " << m2.Sens << ", " << m2.val << " " << m2.cUnit << '\n';
 }
+
 
 

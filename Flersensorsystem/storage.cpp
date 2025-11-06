@@ -15,10 +15,10 @@
             std::cout << "Inga mätvärden i listan!" << '\n';
             return;
         }
-        std::cout << std::setprecision(2);
+        std::cout << std::fixed << std::setprecision(2);
         std::cout << "Mätningar" << '\n';
         for (const auto&m : data) {
-            std::cout << m.TStamp << ", " << m.Sens << ", " << m.val << ", " << m.cUnit << "\n";
+            std::cout << m.TStamp << ", " << m.Sens << ", " << m.val << " " << m.cUnit << "\n";
 
         }
     }
@@ -54,13 +54,13 @@
     }
     StdDev = std::sqrt(StdDev / val);
 
-    std::cout << std::setprecision(2);
+    std::cout << std::fixed << std::setprecision(2);
     std::cout << "Statistik för " << sensorName << "\n";
     std::cout << "Antal värden: " << val << '\n';
     std::cout << "Medelvärdet är: " << mean << '\n';
     std::cout << "Minsta värdet i listan är: " << minVal << '\n';
     std::cout << "Högsta värdet i listan är: " << maxVal << '\n';
-    std::cout << "Standardavvikelsen är: " << StdDev << '\n';
+    std::cout << "Standardavvikelsen är: " << StdDev << '\n' << '\n';
 
 }
     void MeasurementStorage::SaveFile(const std::string& Datafile) const {
@@ -88,8 +88,9 @@
 
         while (std::getline(file, m.TStamp, ',') && std::getline(file, m.Sens, ',')  && (file >> m.val).ignore() && std::getline(file, m.cUnit)) {
             data.push_back(m);
+        
         }
-
+        std::cout << "Värden inladdade!" << '\n';
     }
 
 

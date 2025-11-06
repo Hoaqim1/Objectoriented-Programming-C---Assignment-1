@@ -30,14 +30,20 @@ void Menu() {
 
         switch(choice){
             case 1:
+            getMeasurement(storage, temp, humid);
                 break;
             case 2:
+            storage.ShowStat("TempSensor_1");
+            storage.ShowStat("HumiditySensor_1");
                 break;
             case 3:
+            storage.printAll();
                 break;
             case 4:
+            storage.SaveFile("Datafile.txt");
                 break;
             case 5:
+            storage.LoadFile("Datafile.txt");
                 break;
             case 6:
                 std::cout << "Programmet avslutas" << '\n';

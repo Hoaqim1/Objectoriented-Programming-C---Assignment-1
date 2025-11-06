@@ -18,6 +18,8 @@ class MeasurementStorage {
     void addMeasurement(const Measurement& m);
     void printAll() const;
     void ShowStat(const std::string& sensorName);
+    void SaveFile(const std::string& file) const;
+    void LoadFile(const std::string& file);
 
 
 };

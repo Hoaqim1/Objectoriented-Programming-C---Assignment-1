@@ -26,9 +26,8 @@ void getMeasurement(MeasurementStorage& storage, Sensor& temp, Sensor& humid) {
     m2.TStamp = ts;
     storage.addMeasurement(m2);
 
-    std::cout << "Value added: " << m1.Sens << m1.val << " " << m1.cUnit << '\n';
-    std::cout << "Value added: " << m2.Sens << m2.val << " " << m2.cUnit << '\n';
+    std::cout << "Värdet har lagts till i listan: " << m1.Sens << m1.val << " " << m1.cUnit << '\n';
+    std::cout << "Värdet har lagts till i listan: " << m2.Sens << m2.val << " " << m2.cUnit << '\n';
 }
-
 
 

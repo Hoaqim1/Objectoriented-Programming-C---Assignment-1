@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include <fstream>
 #include "storage.h"
 
 
@@ -55,7 +56,34 @@
     std::cout << "Standardavvikelsen är: " << StdDev << '\n';
 
 }
+    void MeasurementStorage::SaveFile(const std::string& Datafile) const {
+        std::ofstream file(Datafile);
+        if (!file) {
+            std::cout << "Fil kan inte sparas till" << '\n';
+            return;
+        }
+        for (const auto& m : data) {
+            file << m.TStamp << "," << m.Sens << "," << m.val << "," << m.cUnit << "\n";
+        }
+        file.close();
+        std::cout << "Värden sparade";
+}
 
+    void MeasurementStorage::LoadFile(const std::string&Datafile) {
+        std::ifstream file(Datafile);
+        if (!file) {
+            std::cout << "Fil kan inte läsas" << "\n";
+            return;
+        }
+        data.clear();
+        Measurement m;
+        std::string line;
+
+        while (std::getline(file, m.TStamp, ',') && std::getline(file, m.Sens, ',')  && (file >> m.val).ignore() && std::getline(file, m.cUnit)) {
+            data.push_back(m);
+        }
+
+    }
 
 
 

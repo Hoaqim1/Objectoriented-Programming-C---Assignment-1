@@ -8,8 +8,6 @@ Data Collection
 
 The user can read new sensor values (simulated by random generation) – getMeasurement().
 
-Handles invalid input robustly.
-
 Supports multiple sensors (temperature and humidity).
 
 Data Processing

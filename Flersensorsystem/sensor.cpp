@@ -4,7 +4,7 @@
 #include "sensor.h"
 
 
-
+    //konstruktor för sensor som initierar variabler, första biten är värden och andra är initialisering
     Sensor::Sensor(std::string Sens, std::string cUnit, double MinVal, double MaxVal)
     : Sens(Sens), cUnit(cUnit), MinVal(MinVal), MaxVal(MaxVal) {}
 

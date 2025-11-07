@@ -18,7 +18,6 @@ class Sensor{
     //Konstruktorn
     Sensor(std::string, std::string, double, double);
 
-    //Lägg möjligtvis logik här istället, tillfällig ide atm
     //Slumpvärde inom ett intervall, logik i sensor.cpp
     double read();
 

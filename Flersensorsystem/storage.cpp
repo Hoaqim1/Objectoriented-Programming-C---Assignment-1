@@ -6,6 +6,7 @@
 
 
     //Funktioner med logik som ska användas för att hantera och sedan visa data
+    //showstat skulle kunna vara i en egen fil, exempelvis en statistics.cpp/h men det blir för en annan dag om jag bryr mig nog
     void MeasurementStorage::addMeasurement(const Measurement& m)  {
         data.push_back(m);
         }

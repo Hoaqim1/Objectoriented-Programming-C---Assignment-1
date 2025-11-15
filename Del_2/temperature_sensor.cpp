@@ -1,4 +1,5 @@
 #include "temperature_sensor.h"
+#include <cstdlib>
 
     TemperatureSensor::TemperatureSensor(std::string id, double minVal, double maxVal) 
     : id(id), minV_(minVal), maxV_(maxVal) {}

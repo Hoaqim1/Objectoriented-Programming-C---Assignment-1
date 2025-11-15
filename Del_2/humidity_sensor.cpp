@@ -2,7 +2,7 @@
 #include <cstdlib>
 
     HumiditySensor::HumiditySensor(std::string id, double minVal, double maxVal) 
-    : id(id), minV_(minVal), maxV_(maxVal) {}
+    : id_(id), minV_(minVal), maxV_(maxVal) {}
 
     double HumiditySensor::read() {
         double range = maxV_ - minV_;

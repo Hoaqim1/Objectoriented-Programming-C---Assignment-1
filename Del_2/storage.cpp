@@ -3,6 +3,7 @@
 #include <fstream>
 #include <iomanip>
 #include <cmath>
+#include <limits>
 #include "storage.h"
 
 
@@ -27,8 +28,11 @@
     void MeasurementStorage::ShowStat(const std::string& sensorName) {
         int val = 0;
         double sum = 0;
-        double minVal = 100;
-        double maxVal = -100;
+        //numeric_limits sätter ett maxvärde, vilket gör att minval alltid är högre än vad sensorerna
+        //får in för värden, så minVal startar högt vilket leder till att trycket kan vara exakt 950 och då bli minval = 950
+        //är tvärtom för maxVal som startar lågt vilket då alltid kan nå maxvärde som en sensor kan ha.
+        double minVal = std::numeric_limits<double>::max();
+        double maxVal = std::numeric_limits<double>::lowest();
 
     for (const auto& m : data) {
         if (m.Sens == sensorName) {
@@ -93,7 +97,6 @@
         }
         std::cout << "Värden inladdade!" << '\n';
     }
-
 
 
 

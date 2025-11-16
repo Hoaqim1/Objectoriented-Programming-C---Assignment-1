@@ -1,11 +1,12 @@
 #include "measurement.h"
 #include "sensor.h"
 #include "storage.h"
+#include "threshold.h"
 #include <ctime>
 #include <iostream>
 #include <iomanip>
 
-void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sensor>>& sensors) 
+void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sensor>>& sensors, std::vector<Threshold>& thresholds) 
     {
 
     time_t now = time(nullptr);
@@ -26,8 +27,6 @@ void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sen
         std::cout << m.Sens << " " << m.Val << " " << m.Unit << "\n";
     }
 }
-
-
 
 
 

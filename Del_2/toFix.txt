@@ -1,5 +1,5 @@
 Pressure sensor always shows minval as 100, need to redo or find bug//FIXED, added numeric_limits so any sensor range is now valid
-Need input-validation
+Need input-validation//no change needed for now as far as i can tell, forgot i added one in last assignment for load
 Need to add threshold 
 Need to find leftovers from assignment 1 to remove/fix/remake
 Might need to move parts of code to own file or restructure for cleaner code

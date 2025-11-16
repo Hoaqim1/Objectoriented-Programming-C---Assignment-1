@@ -89,7 +89,6 @@
         }
         data.clear();
         Measurement m;
-        std::string line;
 
         while (std::getline(file, m.TStamp, ',') && std::getline(file, m.Sens, ',')  && (file >> m.Val).ignore() && std::getline(file, m.Unit)) {
             data.push_back(m);
@@ -97,7 +96,3 @@
         }
         std::cout << "Värden inladdade!" << '\n';
     }
-
-
-
-

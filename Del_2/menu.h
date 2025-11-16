@@ -1,8 +1,3 @@
-#ifndef menu_h
-#define menu_h
+#pragma once
 
 void Menu();
-
-
-
-#endif

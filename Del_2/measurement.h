@@ -1,4 +1,5 @@
 #pragma once
+#include "threshold.h"
 #include <string>
 #include <vector>
 #include <memory>
@@ -17,5 +18,6 @@ struct Measurement {
 
 }; 
 
-void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sensor>>& sensors);
+void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sensor>>& sensors,
+     std::vector<Threshold>& thresholds, std::vector<Measurement>& alarms);
 

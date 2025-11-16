@@ -1,7 +1,6 @@
 #pragma once
 #include "sensor.h"
 #include <string>
-#include <random>
 
 class TemperatureSensor : public Sensor {
     public:

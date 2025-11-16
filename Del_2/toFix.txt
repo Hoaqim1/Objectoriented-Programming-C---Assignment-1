@@ -1,4 +1,4 @@
-Pressure sensor always shows minval as 100, need to redo or find bug
+Pressure sensor always shows minval as 100, need to redo or find bug//FIXED, added numeric_limits so any sensor range is now valid
 Need input-validation
 Need to add threshold 
 Need to find leftovers from assignment 1 to remove/fix/remake

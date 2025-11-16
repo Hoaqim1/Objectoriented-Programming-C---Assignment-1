@@ -1,0 +1,7 @@
+Pressure sensor always shows minval as 100, need to redo or find bug
+Need input-validation
+Need to add threshold 
+Need to find leftovers from assignment 1 to remove/fix/remake
+Might need to move parts of code to own file or restructure for cleaner code
+Need to test program more as i've just confirmed it works at a base level and nothing else
+Need a readme

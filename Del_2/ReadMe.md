@@ -33,3 +33,6 @@ Alarms can be set to trigger above or under a specific value
 Alarms triggered will have timestamps
 
 All measurements can be saved to a file and also loaded from that file
+
+
+https://app.diagrams.net/#LNamnlöst%20diagram.drawio#%7B"pageId"%3A"FoLLH0HAvn1d5P-vqN85"%7D

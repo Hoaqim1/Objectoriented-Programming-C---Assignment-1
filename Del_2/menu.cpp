@@ -32,13 +32,13 @@ void configureThreshold(std::vector<Threshold>& thresholds) {
         return;
         }
 
-    std::cout << "Ska värdet larma om det är över eller under? 1 för över och 2 för under";
+    std::cout << "Ska värdet larma om det är över eller under? 1 för över och 2 för under" << '\n';
         int choice;
         std::cin >> choice;
     if (choice != 1 && choice != 2) { 
         std::cout << "Ogiltig inmatning, välj mellan 1 eller 2" << '\n';
         std::cin.clear();
-        std::cin.ignore(100, '\n');
+        std::cin.ignore(1000, '\n');
         return;
         }
         th.over = (choice == 1);

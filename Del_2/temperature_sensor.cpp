@@ -2,7 +2,7 @@
 #include <cstdlib>
 
 
-    //Konstruktor som skapar objektet TemperatureSensor
+    //Konstruktor som skapar objektet TemperatureSensor, initieras med ett id och sitt min/maxvärde
     TemperatureSensor::TemperatureSensor(std::string id, double minVal, double maxVal) 
     : id_(id), minV_(minVal), maxV_(maxVal) {}
 

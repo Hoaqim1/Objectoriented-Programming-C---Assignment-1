@@ -37,8 +37,8 @@ void getMeasurement(MeasurementStorage& storage, std::vector<std::unique_ptr<Sen
         if (trigger) {
             alarms.push_back(m);
             std::cout << "Alarm triggad hos " << m.Sens << " " << m.Val << " " << m.Unit << " " << th.over << " " << th.limit << '\n';
+                }
+            }
         }
-        }
-    }
     }
 }

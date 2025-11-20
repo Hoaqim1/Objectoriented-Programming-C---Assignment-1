@@ -1,0 +1,3 @@
+/var/home/dan/STI-Help/Elmin/Objectoriented-Programming-C---Assignment-1/Del_2/build/CMakeFiles/sensor-manager.dir
+/var/home/dan/STI-Help/Elmin/Objectoriented-Programming-C---Assignment-1/Del_2/build/CMakeFiles/edit_cache.dir
+/var/home/dan/STI-Help/Elmin/Objectoriented-Programming-C---Assignment-1/Del_2/build/CMakeFiles/rebuild_cache.dir

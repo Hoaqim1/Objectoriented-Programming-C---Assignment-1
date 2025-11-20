@@ -1,6 +1,16 @@
 
 How to run 
 
+```bash
+mkdir build # if you don't already have one
+cd build
+
+cmake .. # run this to collect the files
+make # run this to build the files
+./sensor-manager # this is how you run the program. PS! the program name is declared in the CMakeLists.txt file.
+  
+```
+
 g++ main.cpp menu.cpp measurement.cpp storage.cpp temperature_sensor.cpp humidity_sensor.cpp pressure_sensor.cpp -o SensorProgram.exe
 Paste in terminal:
 ./SensorProgram.exe
